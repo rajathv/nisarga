@@ -19,7 +19,9 @@
     color: #f5f6f7;
   }
 
-
+  html {
+  scroll-behavior: smooth;
+}
   
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
@@ -131,8 +133,8 @@
       <ul class="nav navbar-nav navbar-right">
           <li><a href="index.html">Home</a></li>
 
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Facilities</a></li>
+        <li><a href="#aboutUs">About Us</a></li>
+        <li><a href="#details">Details</a></li>
         <li><a href="#">Gallery</a></li>
 
         <li><a href="#">Contact Us</a></li>
@@ -149,7 +151,7 @@
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
+<div class="container-fluid bg-2 text-center" id="aboutUs"> 
   <h3 class="margin">About Nisarga Instiute of Education</h3>
   <p>   Having understood the need for a Teacher Education Institute in Chamarajanagar District, Manasa Educational Trust established Nisarga Institute of Education, offering BEd course was established in the Academic Year 2004-05. </p>
   <a href="https://ncte.gov.in/" class="btn btn-default btn-lg">
@@ -158,7 +160,7 @@
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
+<div class="container-fluid bg-3 text-center" id="details">    
   <!--<h3 class="margin">Where To Find Me?</h3><br>
   <div class="row">
     <div class="col-sm-4">

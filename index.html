@@ -1,448 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Nisarga Institute of Education</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <style>
-    
-  body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-  }
-
-  html {
-  scroll-behavior: smooth;
-}
+<!-- Theme Made By www.w3schools.com - No Copyright -->
+<title>Nisarga Institute of Education</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
   
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
-  }
-  .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+p {font-size: 16px;}
+.margin {margin-bottom: 45px;}
+.bg-1 { 
+  background-color: #1abc9c; /* Green */
+  color: #ffffff;
+}
+.bg-2 { 
+  background-color: #474e5d; /* Dark Blue */
+  color: #ffffff;
+}
+.bg-3 { 
+  background-color: #ffffff; /* White */
+  color: #555555;
+}
+.bg-4 { 
+  background-color: #2f2f2f; /* Black Gray */
+  color: #fff;
+}
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+  color: #1abc9c !important;
+}
 
 
 /*according styles */
 
 .container {
-  width: 1180px;
-  margin-top: 3em;
+width: 1180px;
+margin-top: 3em;
 }
 #accordion .panel {
-  border-radius: 0;
-  border: 0;
-  margin-top: 0px;
+border-radius: 0;
+border: 0;
+margin-top: 0px;
 }
 #accordion a {
-  display: block;
-  padding: 10px 15px;
-  border-bottom: 1px solid #b42b2b;
-  text-decoration: none;
+display: block;
+padding: 10px 15px;
+border-bottom: 1px solid #b42b2b;
+text-decoration: none;
 }
 #accordion .panel-heading a.collapsed:hover,
 #accordion .panel-heading a.collapsed:focus {
-  background-color: #b42b2b;
-  color: white;
-  transition: all 0.2s ease-in;
+background-color: #b42b2b;
+color: white;
+transition: all 0.2s ease-in;
 }
 #accordion .panel-heading a.collapsed:hover::before,
 #accordion .panel-heading a.collapsed:focus::before {
-  color: white;
+color: white;
 }
 #accordion .panel-heading {
-  padding: 0;
-  border-radius: 0px;
-  text-align: center;
+padding: 0;
+border-radius: 0px;
+text-align: center;
 }
 #accordion .panel-heading a:not(.collapsed) {
-  color: white;
-  background-color: #b42b2b;
-  transition: all 0.2s ease-in;
+color: white;
+background-color: #b42b2b;
+transition: all 0.2s ease-in;
 }
 
 /* Add Indicator fontawesome icon to the left */
 #accordion .panel-heading .accordion-toggle::before {
-  font-family: 'FontAwesome';
-  content: '\f00d';
-  float: left;
-  color: white;
-  font-weight: lighter;
-  transform: rotate(0deg);
-  transition: all 0.2s ease-in;
+font-family: 'FontAwesome';
+content: '\f00d';
+float: left;
+color: white;
+font-weight: lighter;
+transform: rotate(0deg);
+transition: all 0.2s ease-in;
 }
 #accordion .panel-heading .accordion-toggle.collapsed::before {
-  color: #444;
-  transform: rotate(-135deg);
-  transition: all 0.2s ease-in;
+color: #444;
+transform: rotate(-135deg);
+transition: all 0.2s ease-in;
+}
+/*gallery */
+* {
+box-sizing: border-box;
 }
 
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
 
-  </style>
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+</style>
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#"><img src="images/NVK_School_Logo.jpg" lass="img-responsive " style="display:inline" alt="NIE" width="80" height="120"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>
-
-        <li><a href="#aboutUs">About Us</a></li>
-        <li><a href="#details">Details</a></li>
-        <li><a href="#">Gallery</a></li>
-
-        <li><a href="#contactUs">Contact Us</a></li>
-      </ul>
-    </div>
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+    <a class="navbar-brand" href="#"><img src="images/NVK_School_Logo.jpg" lass="img-responsive " style="display:inline" alt="NIE" width="80" height="120"></a>
   </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+
+      <li><a href="#aboutUs">About Us</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#">Gallery</a></li>
+
+      <li><a href="#contactUs">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
 </nav>
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center" id="mainSec">
-    <h1>NISARGA INSTITUTE OF EDUCATION</h1>
-  <img src="images/Building.jpg" class="img-responsive margin" style="display:inline" alt="NIE" width="980" height="700">
- 
+  <h1>NISARGA INSTITUTE OF EDUCATION</h1>
+<img src="images/Building.jpg" class="img-responsive margin" style="display:inline" alt="NIE" width="980" height="700">
+
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center" id="aboutUs"> 
-  <h3 class="margin">About Nisarga Institute of Education</h3>
-  <p>   With a nobel purpose of educating SC and  ST and other backward classes in Chamarajanagar  district ,teacher education collegeNisargaInstitute Education under MET was Commenced in the year 2004-05.
-      Since 2004-05 numbers of B.Ed trainees who are trained in our reputed institution have Secured number of ranks, and more number distinctions.
-      Students who are trained  in our prestigious institution are recruited  in various government  and  renowned private school’s & college’s rendering  good service to students welfare of the society
-    </p>
-  <a href="https://ncte.gov.in/" class="btn btn-default btn-lg">
-   NCTE's Website Link
-  </a>
+<h3 class="margin">About Nisarga Institute of Education</h3>
+<p>   With a nobel purpose of educating SC and  ST and other backward classes in Chamarajanagar  district ,teacher education collegeNisargaInstitute Education under MET was Commenced in the year 2004-05.
+    Since 2004-05 numbers of B.Ed trainees who are trained in our reputed institution have Secured number of ranks, and more number distinctions.
+    Students who are trained  in our prestigious institution are recruited  in various government  and  renowned private school’s & college’s rendering  good service to students welfare of the society
+  </p>
+<a href="https://ncte.gov.in/" class="btn btn-default btn-lg">
+  NCTE's Website Link
+</a>
 </div>
+
+<!-- Gallery -->
+
+<div class="container-fluid bg-2" id="gallery"> 
+<!-- Container for the image gallery -->
+<center><h1> Gallery</h1></center>
+<div class="container">
+
+<!-- Full-width images with number text -->
+<div class="mySlides">
+  <div class="numbertext">1 / 11</div>
+    <img src="images/infra01.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 11</div>
+    <img src="images/infra02.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 11</div>
+    <img src="images/infra03.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">4 / 11</div>
+    <img src="images/infra04.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">5 / 11</div>
+    <img src="images/infra05.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">6 / 11</div>
+    <img src="images/infra06.jpg" style="width:100%">
+</div>
+<div class="mySlides">
+  <div class="numbertext">7 / 11</div>
+    <img src="images/infra07.jpg" style="width:100%">
+</div>
+<div class="mySlides">
+  <div class="numbertext">8 / 11</div>
+    <img src="images/infra08.jpeg" style="width:100%">
+</div>
+<div class="mySlides">
+  <div class="numbertext">9 / 11</div>
+    <img src="images/infra09.jpg" style="width:100%">
+</div>
+<div class="mySlides">
+  <div class="numbertext">10 / 11</div>
+    <img src="images/infra10.jpg" style="width:100%">
+</div>
+<div class="mySlides">
+  <div class="numbertext">11 / 11</div>
+    <img src="images/infra11.jpg" style="width:100%">
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!-- 
+<div class="caption-container">
+  <p id="caption"></p>
+</div> -->
+<!-- 
+
+<div class="row">
+  <div class="column">
+    <img class="demo cursor" src="images/infra01.jpg" style="width:100%; height: 100px" onclick="currentSlide(1)" alt="The Woods">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="images/infra02.jpg" style="width:100%; height: 100px" onclick="currentSlide(2)" alt="Cinque Terre">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="images/infra03.jpeg" style="width:100%; height: 100px" onclick="currentSlide(3)" alt="Mountains and fjords">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="images/infra04.jpeg" style="width:100%; height: 100px" onclick="currentSlide(4)" alt="Northern Lights">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="images/infra05.jpeg" style="width:100%; height: 100px" onclick="currentSlide(5)" alt="Nature and sunrise">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="images/infra06.jpg" style="width:100%; height: 100px" onclick="currentSlide(6)" alt="Snowy Mountains">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="images/infra07.jpg" style="width:100%; height: 100px" onclick="currentSlide(7)" alt="Snowy Mountains">
+  </div>
+  <div clas="column">
+    <img class="demo cursor" src="images/infra08.jpeg" style="width:100%; height: 100px" onclick="currentSlide(8)" alt="Snowy Mountains">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="images/infra09.jpg" style="width:100%; height: 100px" onclick="currentSlide(9)" alt="Snowy Mountains">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="images/infra10.jpg" style="width:100%; height: 100px" onclick="currentSlide(10)" alt="Snowy Mountains">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="images/infra11.jpg" style="width:100%; height: 100px" onclick="currentSlide(11)" alt="Snowy Mountains">
+  </div>
+      
+</div> -->
+
+</div>
+</div>  <!-- Container for the image gallery -->
+
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-align" id="details">    
-  <!--<h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-  </div>-->
-  <center><h1>Details</h1></center>
+<!--<h3 class="margin">Where To Find Me?</h3><br>
+<div class="row">
+  <div class="col-sm-4">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+  </div>
+  <div class="col-sm-4"> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+  </div>
+  <div class="col-sm-4"> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+  </div>
+</div>-->
+<center><h1>Details</h1></center>
 <div class="container">
-    <div id="accordion" class="panel-group">
+  <div id="accordion" class="panel-group">
 
 
-      <div class="panel">
-        <div class="panel-heading">
-        <h4 class="panel-title">
-          <a href="#panelBodyOne" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">Facilities</a>
-          </h4>
-        </div>
-        <div id="panelBodyOne" class="panel-collapse collapse in">
-        <div class="panel-body">
-            <ol type="1">
-                <li>Library Books worth 4,07,034.90/-</li>
-                <li> Portable Public Address System worth Rs.11,000/-</li>
-                <li>NCERT Science Kits related to Science Subjects
+    <div class="panel">
+      <div class="panel-heading">
+      <h4 class="panel-title">
+        <a href="#panelBodyOne" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">Facilities</a>
+        </h4>
+      </div>
+      <div id="panelBodyOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+          <ol type="1">
+              <li>Library Books worth 4,07,034.90/-</li>
+              <li> Portable Public Address System worth Rs.11,000/-</li>
+              <li>NCERT Science Kits related to Science Subjects
+                </li>
+                <li> NCERT Science Kits related to Mathematic Subject
                   </li>
-                  <li> NCERT Science Kits related to Mathematic Subject
-                    </li>
-              </ol>
-            
-          </div>
+            </ol>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-heading">
+      <h4 class="panel-title">
+        <a href="#panelBodyTwo" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Infrastructure</a>
+        </h4>
+      </div>
+      <div id="panelBodyTwo" class="panel-collapse collapse">
+        
+
+          <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Classrooms :</b>&nbsp;College
+              has adequate and spacious classrooms with good ventilation.</FONT></FONT></P>
+              <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Laboratories :</b>&nbsp;The
+              College has Educational Technology Lab, Language Lab, Science Lab,
+              Educational Psychology Lab, Curriculum Lab, etc. The College has ICT
+              Resource Centre with 25 computers and access to Internet. </FONT></FONT>
+              </P>
+              <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Library:</b>&nbsp;The
+              College has a spacious library and reading room with a massive
+              collection of over 4,041/- books catering to the needs of education,
+              perspectives, pedagogy, school text books, fiction, etc., besides
+              subscription to various educational journals, magazines and
+              newspapers.</FONT></FONT></P>
+              <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Multi-purpose
+                  Playground:</b>&nbsp;The College has provision for various indoor and
+              outdoor sports activities. It has a volleyball court, badminton,throw
+              ball, Kabbadi, Tenycoit, Chess,Carrom etc. for the benefit of
+              students.</FONT></FONT></P>
+              <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Multi-purpose
+                  Hall:</b>&nbsp;The College has a multi-purpose hall, which is used to
+              conduct morning assembly, seminars, conferences, workshops, etc.,
+              with a seating capacity of 300 students.</FONT></FONT></P>
+              <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Basic Amenities:</b> The
+              College has drinking water facilities, separate toilets for gents and
+              ladies, separate ladies and gents rest rooms, canteen etc.</FONT></FONT></P>
+              <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Hostel:</b>The College
+              has separate hostel facilities for boys and girls, with special
+              preference to students from remote areas.</FONT></FONT></P>
+              <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Staff Quarters :</b>
+              There is a staff quarters for the employees of  Nisarga Institute of 
+              Education, which is just a walkable distance from the College.</FONT></FONT></P>
+              
+
         </div>
       </div>
 
-      <div class="panel">
+    
+    </div>
+
+
+
+    <div class="panel">
+      <div class="panel-heading">
+      <h4 class="panel-title">
+        <a href="#panelBodyThree" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Activities</a>
+        </h4>
+      </div>
+      <div id="panelBodyThree" class="panel-collapse collapse">
+      <div class="panel-body">
+          <UL style="list-style-type:disc;">
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">At
+              the initial stage, the College conducts Induction Programme briefing
+              the students about the Course, Curriculum, Campus life, introduction
+              of office bearers, etc.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">The
+              office-bearers for the students association will be made through
+              elections</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Inauguration
+              of the Students Association will be made in the presence of invited
+              Dignitaries.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Different
+              Clubs like Humanity Club, Science Club, Social Science Club,
+              Language club etc., are formed to conduct various activities
+              nourishing knowledge and social cohesion among the students.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Students
+              will be provided opportunity to participate in the Manasotsava
+              events conducted by Manasa Educational Trust® Kollegal, as
+              Volunteers. This will enhance the spirit of Co-operation,
+              Co-ordination, leadership qualities, time management, etc. among the
+              students.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Students
+              are provided an opportunity to bring out a fortnightly ‘wall
+              magazine’ titled ‘CHIGURU’. The write-ups to this magazine
+              will also be contributed by the students themselves, which includes
+              poems, short stories, essay, drawings, humorous articles, etc. The
+              best articles published in ‘CHIGURU Wall Magazine’, will be
+              selected for the Yearly College Magazine ‘MANASA’.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Periodical
+              tests, tutorials, seminars, special lectures, etc., are being
+              conducted as part of the academic activities.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Students
+              are made to involve in personality development course, spiritual
+              lectures organized by the Manasa Educational Trust®
+              Kollegal,periodically.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Students
+              are also provided opportunity to participate in the orientation and
+              training, and personality development programmes, organized by
+              Manasa Educational Trust® Kollegal.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Before
+              practicing teaching, the students will be provided guidance and
+              demonstration by expert teachers of Secondary School Education.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Importance
+              will be given to games, sports and cultural activities as part of
+              Co-curricular Activities.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Community
+              Living Camp will be organized annually at different places as part
+              of the curriculum of University of Mysuru.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Students
+              are encouraged prpeared to participate in debates, elocution, essay
+              writing, Rangoli, Pick and Act, Pick and Speakand other literary,
+              cultural competitions and there facilitate them to participate in
+              inter-collegiate competitions. Due to this effort of our College,
+              good number of students have won prizes and awards in the previous
+              batches.</SPAN></FONT></FONT></P>
+              <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+              <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">All
+              the national festivals are being celebrated by the College.</SPAN></FONT></FONT></P>
+            </UL>
+
+      </div>
+      </div>
+    </div>
+
+
+    <div class="panel">
         <div class="panel-heading">
         <h4 class="panel-title">
-          <a href="#panelBodyTwo" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Infrastructure</a>
+          <a href="#panelBodyFour" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Approved Staff List from University</a>
           </h4>
         </div>
-        <div id="panelBodyTwo" class="panel-collapse collapse">
+        <div id="panelBodyFour" class="panel-collapse collapse">
         <div class="panel-body">
+            <iframe src="pdf/Staff Details.pdf" width="100%" height="500px">
 
-            <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Classrooms :</b>&nbsp;College
-                has adequate and spacious classrooms with good ventilation.</FONT></FONT></P>
-                <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Laboratories :</b>&nbsp;The
-                College has Educational Technology Lab, Language Lab, Science Lab,
-                Educational Psychology Lab, Curriculum Lab, etc. The College has ICT
-                Resource Centre with 25 computers and access to Internet. </FONT></FONT>
-                </P>
-                <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Library:</b>&nbsp;The
-                College has a spacious library and reading room with a massive
-                collection of over 4,041/- books catering to the needs of education,
-                perspectives, pedagogy, school text books, fiction, etc., besides
-                subscription to various educational journals, magazines and
-                newspapers.</FONT></FONT></P>
-                <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Multi-purpose
-                    Playground:</b>&nbsp;The College has provision for various indoor and
-                outdoor sports activities. It has a volleyball court, badminton,throw
-                ball, Kabbadi, Tenycoit, Chess,Carrom etc. for the benefit of
-                students.</FONT></FONT></P>
-                <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Multi-purpose
-                    Hall:</b>&nbsp;The College has a multi-purpose hall, which is used to
-                conduct morning assembly, seminars, conferences, workshops, etc.,
-                with a seating capacity of 300 students.</FONT></FONT></P>
-                <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Basic Amenities:</b> The
-                College has drinking water facilities, separate toilets for gents and
-                ladies, separate ladies and gents rest rooms, canteen etc.</FONT></FONT></P>
-                <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Hostel:</b>The College
-                has separate hostel facilities for boys and girls, with special
-                preference to students from remote areas.</FONT></FONT></P>
-                <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><b>Staff Quarters :</b>
-                There is a staff quarters for the employees of  Nisarga Institute of 
-                Education, which is just a walkable distance from the College.</FONT></FONT></P>
-               
-
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="panel">
-        <div class="panel-heading">
-        <h4 class="panel-title">
-          <a href="#panelBodyThree" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Activities</a>
-          </h4>
-        </div>
-        <div id="panelBodyThree" class="panel-collapse collapse">
-        <div class="panel-body">
-            <UL style="list-style-type:disc;">
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">At
-                the initial stage, the College conducts Induction Programme briefing
-                the students about the Course, Curriculum, Campus life, introduction
-                of office bearers, etc.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">The
-                office-bearers for the students association will be made through
-                elections</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Inauguration
-                of the Students Association will be made in the presence of invited
-                Dignitaries.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Different
-                Clubs like Humanity Club, Science Club, Social Science Club,
-                Language club etc., are formed to conduct various activities
-                nourishing knowledge and social cohesion among the students.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Students
-                will be provided opportunity to participate in the Manasotsava
-                events conducted by Manasa Educational Trust® Kollegal, as
-                Volunteers. This will enhance the spirit of Co-operation,
-                Co-ordination, leadership qualities, time management, etc. among the
-                students.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Students
-                are provided an opportunity to bring out a fortnightly ‘wall
-                magazine’ titled ‘CHIGURU’. The write-ups to this magazine
-                will also be contributed by the students themselves, which includes
-                poems, short stories, essay, drawings, humorous articles, etc. The
-                best articles published in ‘CHIGURU Wall Magazine’, will be
-                selected for the Yearly College Magazine ‘MANASA’.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Periodical
-                tests, tutorials, seminars, special lectures, etc., are being
-                conducted as part of the academic activities.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Students
-                are made to involve in personality development course, spiritual
-                lectures organized by the Manasa Educational Trust®
-                Kollegal,periodically.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Students
-                are also provided opportunity to participate in the orientation and
-                training, and personality development programmes, organized by
-                Manasa Educational Trust® Kollegal.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Before
-                practicing teaching, the students will be provided guidance and
-                demonstration by expert teachers of Secondary School Education.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Importance
-                will be given to games, sports and cultural activities as part of
-                Co-curricular Activities.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Community
-                Living Camp will be organized annually at different places as part
-                of the curriculum of University of Mysuru.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">Students
-                are encouraged prpeared to participate in debates, elocution, essay
-                writing, Rangoli, Pick and Act, Pick and Speakand other literary,
-                cultural competitions and there facilitate them to participate in
-                inter-collegiate competitions. Due to this effort of our College,
-                good number of students have won prizes and awards in the previous
-                batches.</SPAN></FONT></FONT></P>
-                <LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-                <FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-IN">All
-                the national festivals are being celebrated by the College.</SPAN></FONT></FONT></P>
-              </UL>
+            </iframe>
 
         </div>
         </div>
       </div>
+
 
 
       <div class="panel">
           <div class="panel-heading">
           <h4 class="panel-title">
-            <a href="#panelBodyFour" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Approved Staff List from University</a>
+            <a href="#panelBodyFive" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Academic and Admission</a>
             </h4>
           </div>
-          <div id="panelBodyFour" class="panel-collapse collapse">
+          <div id="panelBodyFive" class="panel-collapse collapse">
           <div class="panel-body">
-              <iframe src="pdf/CamScanner 01-24-2022 16.44.44_1.pdf" width="100%" height="500px">
-
-              </iframe>
-  
-          </div>
+              <p><b>Course Details :</b>  B.Ed. has been made as a 2 years duration course from the Academic year  2015-16, as per the Regulations of N.C.T.E duly approved by Government of Karnataka and University of Mysuru. Normally, in Karnataka, the academic year begins during January in every calendar year. For complete details regarding the course structure and curriculum kindly visit University of Mysuru’s website www.uni-mysore.ac.in may be visited.</p> 
+          
+          <h3>List of Students:</h3>
+          <h2>1st Year</h2>
+          <iframe src="pdf/B.ED Students Admission Details Ist Year.pdf" width="100%" height="500px">
+          </iframe>
+          <h2>2nd Year</h2>
+          <iframe src="pdf/B.ED Admission Details IInd Year.pdf" width="100%" height="500px">
+          </iframe>
+            </div>
           </div>
         </div>
-
-
-
         <div class="panel">
             <div class="panel-heading">
             <h4 class="panel-title">
-              <a href="#panelBodyFive" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Academic and Admission</a>
+              <a href="#panelBodySix" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Financial Information</a>
               </h4>
             </div>
-            <div id="panelBodyFive" class="panel-collapse collapse">
+            <div id="panelBodySix" class="panel-collapse collapse">
             <div class="panel-body">
-                <p><b>Course Details :</b>  B.Ed. has been made as a 2 years duration course from the Academic year  2015-16, as per the Regulations of N.C.T.E duly approved by Government of Karnataka and University of Mysuru. Normally, in Karnataka, the academic year begins during January in every calendar year. For complete details regarding the course structure and curriculum kindly visit University of Mysuru’s website www.uni-mysore.ac.in may be visited.</p> 
-            
-            <h3>List of Students:</h3>
-            <h2>1st Year</h2>
-            <iframe src="pdf/B.ED Students Admission Details Ist Year.pdf" width="100%" height="500px">
-            </iframe>
-            <h2>2nd Year</h2>
-            <iframe src="pdf/B.ED Admission Details IInd Year.pdf" width="100%" height="500px">
-            </iframe>
+                <h3>Finance 2021</h3>
+                <iframe src="pdf/Financial2021.pdf" width="100%" height="500px">
+                </iframe>
+                <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/L.Balance Sheet.pdf">Balance Sheet</a></h3>
+                <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/M.Income and expenditure.pdf">Income and Expenditure</a></h3>
+                
+                <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/N.Receipt and Payment.pdf">Receipt and Payment</a></h3>
               </div>
             </div>
           </div>
+
           <div class="panel">
               <div class="panel-heading">
               <h4 class="panel-title">
-                <a href="#panelBodySix" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Financial Information</a>
+                <a href="#panelBodySeven" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Mandatory Information</a>
                 </h4>
               </div>
-              <div id="panelBodySix" class="panel-collapse collapse">
+              <div id="panelBodySeven" class="panel-collapse collapse">
               <div class="panel-body">
-                  <h3>Finance 2021</h3>
-                  <iframe src="pdf/Financial2021.pdf" width="100%" height="500px">
-                  </iframe>
-                  <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/L.Balance Sheet.pdf">Balance Sheet</a></h3>
-                  <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/M.Income and expenditure.pdf">Income and Expenditure</a></h3>
-                  
-                  <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/N.Receipt and Payment.pdf">Receipt and Payment</a></h3>
+                  <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/J.Affidavitscan.pdf">Affidavit</a></h3>
+                  <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/B.ED Institutions Code Doc.pdf">NCTE Order</a></h3>
+              <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/Bio Matrix.pdf">Biometric </a></h3>
+              <!-- <h3><i style="font-size:24px" class="fa">&#xf019;</i> <a href="pdf/O.Biometric_BEd2.pdf">Biometric BEd2</a></h3> -->
                 </div>
               </div>
             </div>
 
-            <div class="panel">
-                <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a href="#panelBodySeven" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Mandatory Information</a>
-                  </h4>
-                </div>
-                <div id="panelBodySeven" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/J.Affidavitscan.pdf">Affidavit</a></h3>
-                    <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/B.ED Institutions Code Doc.pdf">NCTE Order</a></h3>
-                <h3><i style="font-size:24px" class="fa">&#xf019;</i><a href="pdf/O.Biometric_BEd1.pdf">Biometric BEd1</a></h3>
-                <h3><i style="font-size:24px" class="fa">&#xf019;</i> <a href="pdf/O.Biometric_BEd2.pdf">Biometric BEd2</a></h3>
-                  </div>
-                </div>
-              </div>
-  
-    </div>
-  </div> 
-  
+  </div>
+</div> 
+
 </div>
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center" id="contactUs"> 
-    <h3 class="margin">Contact Us</h3>
-  <p><b>Address:</b> Manasa Educational Trust ®
-    Southern Extension,
-    Kollegal – 571440.</p>
-  
-  
-  <p><b>Phone:</b> 08224 - 252498</p>
-  <p> <b>Email: </b>contact@manasaedu.in</p>
-  </div>
+  <h3 class="margin">Contact Us</h3>
+<p><b>Address:</b> Manasa Educational Trust ®
+  Southern Extension,
+  Kollegal – 571440.</p>
+
+
+<p><b>Phone:</b> 08224 - 252498</p>
+<p> <b>Email: </b>contact@manasaedu.in</p>
+</div>
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>Powered By RVG Technologies</a></p> 
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-      <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-      <a class="w3-button w3-theme" href="#mainSec"><span class="w3-xlarge">
-      <i class="fa fa-chevron-circle-up"></i></span></a>
-    </div>
+<p>Powered By RVG Technologies</a></p> 
+<div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#mainSec"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
 </footer>
 
 </body>
